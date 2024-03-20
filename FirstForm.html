@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="FirstForm.css" />
+    <title>FirstForm</title>
+  </head>
+
+  <body>
+    <form class="forma">
+      <header>Sign up</header>
+      <div class="name">
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter First Name"
+        /><br /><br />
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Enter Last Name"
+        /><br /><br />
+      </div>
+
+      <div class="date">
+        <label for="date_birth">Date of Birth:</label>
+        <select id="date_birth" name="date_birth">
+          <option hidden>Date</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="">...</option>
+        </select>
+        <select name="Month" id="">
+          <option hidden>Month</option>
+          <option value="Yanvar">Yanvar</option>
+          <option value="Fevral">Fevral</option>
+          <option value="Mart">Mart</option>
+          <option value="Aprel">Aprel</option>
+          <option value="May">May</option>
+          <option value="">...</option>
+        </select>
+        <select name="Year" id="">
+          <option hidden>Year</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+        </select>
+      </div>
+
+      <div class="jins">
+        <label style="margin-right: 30px">Gender</label>
+        <div class="gender">
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br />
+        </div>
+      </div>
+
+      <div class="mamlakat">
+        <label for="county" style="margin-right: 15px"> Country </label>
+        <div class="country">
+          <select name="country">
+            <option hidden>Country</option>
+            <option value="Uzbekistan">Uzbekistan</option>
+            <option value="Russia">Russia</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email" style="margin-right: 15px">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter E-mail"
+        />
+      </div>
+
+      <div class="phone">
+        <label for="quantity" style="margin-right: 15px">Phone</label>
+        <input
+          type="text"
+          id="quantity"
+          name="quantity"
+          placeholder="Entrer Phone"
+        />
+      </div>
+
+      <div class="parol">
+        <div class="password">
+          <label for="pwd" style="margin-right: 15px">Password</label><br />
+          <input type="password" id="pwd" name="pwd" />
+        </div>
+        <div class="confirm_password">
+          <label for="pwd" style="margin-right: 15px">Confirm Password</label
+          ><br />
+          <input type="password" id="pwd" name="pwd" />
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <label><input type="checkbox" /> I Agree to the Terms of use</label>
+      </div>
+
+      <footer>
+        <input type="submit" value="Submit" class="sub" />
+        <input type="submit"  value="Cancel" class="can" />
+      </footer>
+    </form>
+  </body>
+</html>
